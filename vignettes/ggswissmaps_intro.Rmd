@@ -11,7 +11,7 @@ vignette: >
 
 ## Installation
 
-You can install the package with `devtools::install_github`.
+You can install the package with `devtools::install_github`:
 
 ```{r eval=FALSE}
 # install.packages("devtools")
