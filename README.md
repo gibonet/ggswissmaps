@@ -1,0 +1,2 @@
+# ggswissmaps
+R package
