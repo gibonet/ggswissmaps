@@ -58,3 +58,26 @@ names(shp_df)
 ?shp_df
 ```
 
+### Some maps
+
+```{r}
+data("maps2")
+names(maps2)
+
+# By name
+maps2[["g1k15"]]
+
+# By index
+maps2[[147]]
+```
+
+The objects contained in `maps2` are `ggplot` objects. They have been created with `ggplot2::ggplot` plus a `ggplot2::geom_path` layer with the data in `shp_df`. As an example, the previous map is the same as:
+
+```{r}
+ggplot(shp_df[["g1k15"]], aes(x = long, y = lat, group = group)) +
+  geom_path() +
+  coord_equal() +
+  theme_white_f()
+```
+
+
