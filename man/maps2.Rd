@@ -23,6 +23,12 @@ data(maps2)
 class(maps2)
 length(maps2)
 names(maps2)
-str(maps2[["g1k15"]])
+# str(maps2[["g1k15"]])
+
+# By name
+maps2[["g1k15"]]
+
+# By index
+maps2[[147]]
 }
 
