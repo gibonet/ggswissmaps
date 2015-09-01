@@ -7,6 +7,11 @@ to eliminate axes, ticks and put white background}
 \usage{
 theme_white_f(base_size = 12, base_family = "")
 }
+\arguments{
+\item{base_size}{base font size}
+
+\item{base_family}{base font family}
+}
 \description{
 theme_white_f is a ggplot2 theme function that can be added to a ggplot2 object
 to eliminate axes, ticks and put white background
