@@ -10,7 +10,7 @@
 
 <meta name="author" content="gibo" />
 
-<meta name="date" content="2015-08-31" />
+<meta name="date" content="2015-09-01" />
 
 <title>ggswissmaps Intro</title>
 
@@ -54,18 +54,21 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <div id="header">
 <h1 class="title"><code>ggswissmaps</code> Intro</h1>
 <h4 class="author"><em>gibo</em></h4>
-<h4 class="date"><em>2015-08-31</em></h4>
+<h4 class="date"><em>2015-09-01</em></h4>
 </div>
 
 
 <div id="installation" class="section level2">
 <h2>Installation</h2>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">system</span>(<span class="st">&quot;R CMD INSTALL ggswissmaps_0.0.3.tar.gz&quot;</span>)</code></pre>
+<p>You can install the package with <code>devtools::install_github</code>.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install.packages(&quot;devtools&quot;)</span>
+devtools::<span class="kw">install_github</span>(<span class="st">&quot;gibonet/ggswissmaps&quot;</span>)</code></pre>
 </div>
 <div id="content" class="section level2">
 <h2>Content</h2>
 <p>First of all, load the package:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggswissmaps)</code></pre>
+<pre><code>## Loading required package: ggplot2</code></pre>
 <p>We can use the <code>ls</code> function to look at the content:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ls</span>(<span class="st">&quot;package:ggswissmaps&quot;</span>)</code></pre>
 <pre><code>## [1] &quot;maps&quot;          &quot;maps2&quot;         &quot;shp_df&quot;        &quot;theme_white&quot;  

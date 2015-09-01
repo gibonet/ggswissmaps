@@ -11,8 +11,11 @@ vignette: >
 
 ## Installation
 
+You can install the package with `devtools::install_github`.
+
 ```{r eval=FALSE}
-system("R CMD INSTALL ggswissmaps_0.0.3.tar.gz")
+# install.packages("devtools")
+devtools::install_github("gibonet/ggswissmaps")
 ```
 
 ## Content
