@@ -1,0 +1,36 @@
+ggswissmaps 0.0.3
+----------------------------------------------------------------
+
+NEW FEATURES
+
+* Added data frames of swiss boundaries, from 2008 to 2015 (object shp_df)
+* Added swiss maps (as ggplot objects), from 2008 to 2015 (data from each year is of January, first): object maps2
+* Added a package vignette
+* Type Type help(package="ggswissmaps") to run documentation.
+* Type browseVignettes("ggswissmaps") to run package vignette.
+
+
+
+ggswissmaps 0.0.2
+----------------------------------------------------------------
+
+NEW FEATURES
+
+* Added title in title case
+* Very first version of the (cran) package. Type help(package="ggswissmaps") to run documentation. 
+
+
+ggswissmaps 0.0.1
+----------------------------------------------------------------
+
+NEW FEATURES
+
+* Very first version of the (cran) package. Type help(package="ggswissmaps") to run documentation. 
+
+
+ggswissmaps 0.0.0
+----------------------------------------------------------------
+
+NEW FEATURES
+
+* Very first version of the package. Type help(package="ggswissmaps") to run documentation. 

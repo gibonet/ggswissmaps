@@ -1,0 +1,57 @@
+---
+title: "`ggswissmaps` Intro"
+author: "gibo"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+## Installation
+
+```{r eval=FALSE}
+system("R CMD INSTALL ggswissmaps_0.0.3.tar.gz")
+```
+
+## Content
+
+First of all, load the package:
+```{r}
+library(ggswissmaps)
+```
+
+We can use the `ls` function to look at the content:
+```{r}
+ls("package:ggswissmaps")
+```
+
+Or launch the help:
+```{r eval = FALSE}
+utils::help(package = "ggswissmaps")
+```
+
+
+There is some data:
+```{r}
+data(package = "ggswissmaps")
+```
+
+
+
+
+## Examples
+
+### Using the data
+
+```{r}
+data("shp_df")
+class(shp_df)
+length(shp_df)
+names(shp_df)
+
+# Data description
+?shp_df
+```
+
