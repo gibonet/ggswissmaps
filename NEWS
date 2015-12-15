@@ -3,6 +3,8 @@ ggswissmaps 0.0.3
 
 NEW FEATURES
 
+* Works with ggplot2 >= 2.0.0
+* Two new contributors
 * Added data frames of swiss boundaries, from 2008 to 2015 (object shp_df)
 * Added swiss maps (as ggplot objects), from 2008 to 2015 (data from each year is of January, first): object maps2
 * Added a package vignette
