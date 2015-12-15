@@ -35,7 +35,7 @@ NULL
 #' There are only two objects in package \pkg{ggswissmaps}:
 #' \code{theme_white} (for white background of ggplot2 objects) and \code{maps} (a list of 8 swiss maps).
 #' 
-#'
+#' 
 #' @docType package
 #' @name ggswissmaps
 NULL
