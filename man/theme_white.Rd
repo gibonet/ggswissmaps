@@ -24,6 +24,7 @@ to eliminate axes, ticks and put white background}
   ..- attr(*, "class")= chr [1:2] "element_blank" "element"
  - attr(*, "class")= chr [1:2] "theme" "gg"
  - attr(*, "complete")= logi FALSE
+ - attr(*, "validate")= logi TRUE
 }}
 \usage{
 theme_white
