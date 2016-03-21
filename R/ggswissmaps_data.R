@@ -1,28 +1,5 @@
-#' A list with 8 maps of Switzerland's territory at various levels.
-#'
-#' Every element of the list is a ggplot2 object which is
-#' already ready to plot. 
-#' \itemize{
-#'   \item distretti. Swiss districts
-#'   \item comuni. Swiss communes (2014)
-#'   \item boh. Don't know
-#'   \item boh2. Don't know 2
-#'   \item cantoni. Swiss cantons
-#'   \item ch. Swiss national boundaries
-#'   \item gr. Swiss big regions (NUTS3)
-#' }
-#'
-#' @format A list with 16 ggplot2 maps with swiss territory
-#' @source \url{http://www.bfs.admin.ch/bfs/portal/fr/index/dienstleistungen/geostat/datenbeschreibung.html}
-#' @examples
-#' data(maps)
-#' maps[[1]]
-#' names(maps)
-#' maps[["cantoni"]]
-#' str(maps[["cantoni"]])
-#' str(maps[["cantoni"]]$data)
-#' @name maps
-NULL
+
+
 
 
 
@@ -38,12 +15,14 @@ NULL
 #' 
 #' @docType package
 #' @name ggswissmaps
+#' 
+#' @import ggplot2
 NULL
 
 
 #' theme_white is a ggplot2 theme object and can be added to a ggplot2 object  
 #' to eliminate axes, ticks and put white background
-theme_white <- theme(
+theme_white <- ggplot2::theme(
   axis.title=element_blank(),
   axis.text=element_blank(),
   axis.ticks=element_blank(),
@@ -57,7 +36,7 @@ theme_white <- theme(
 NULL
 
 
-#' A list with 158 data frames of swiss territory boundaries, at various levels.
+#' A list with 16 data frames of swiss territory boundaries, at various levels.
 #'
 #' Every element of the list is a data frame, which can be used with ggplot2.
 #'
@@ -68,7 +47,7 @@ NULL
 #'   \item group. A factor to be used to plot the polygons correctly (with ggplot2)
 #' }
 #'
-#' @format A list with 158 data frames with swiss territory boundaries (at various levels).
+#' @format A list with 16 data frames with swiss territory boundaries (at various levels).
 #' @source \url{http://www.bfs.admin.ch/bfs/portal/fr/index/dienstleistungen/geostat/datenbeschreibung.html}
 #' @examples
 #' data(shp_df)
@@ -79,7 +58,7 @@ NULL
 #' @name shp_df
 NULL
 
-#' A list with 158 ggplot2 objects of swiss territory boundaries, at various levels.
+#' A list with 16 ggplot2 objects of swiss territory boundaries, at various levels.
 #'
 #' Every element of the list is a ggplot2 graphic, corresponding to an element of \code{shp_df}.
 #'
@@ -90,10 +69,9 @@ NULL
 #'   \item group. A factor to be used to plot the polygons correctly (with ggplot2)
 #' }
 #'
-#' @format A list with 158 data frames with swiss territory boundaries (at various levels).
+#' @format A list with 16 data frames with swiss territory boundaries (at various levels).
 #' @source \url{http://www.bfs.admin.ch/bfs/portal/fr/index/dienstleistungen/geostat/datenbeschreibung.html}
 #' @examples
-#' data(maps2)
 #' class(maps2)
 #' length(maps2)
 #' names(maps2)
@@ -103,9 +81,21 @@ NULL
 #' maps2[["g1k15"]]
 #' 
 #' # By index
-#' maps2[[147]]
+#' maps2[[5]]
+#' @export
 #' @name maps2
-NULL
+data("shp_df", envir = parent.env(environment()))
+maps2 <- lapply(shp_df, maps2_)
+
+# Sostituito le due righe qui sotto (0.0.7) (e tolto maps2.rda dalla cartella data/)
+# #' @name maps2
+# NULL
+
+# Con queste 4 (0.0.8)
+# #' @name maps2
+# #' @export
+# data("shp_df")
+# maps2 <- lapply(shp_df, maps2_)
 
 
 # extract_data <- function(gg){
