@@ -5,7 +5,13 @@ R package
 
 # Installation
 
-The package can be installed with the `devtools::install_github` function:
+The package can be installed from CRAN:
+
+```
+install.packages("ggswissmaps")
+```
+
+or from github:
 
 ```
 # install.packages("devtools")
