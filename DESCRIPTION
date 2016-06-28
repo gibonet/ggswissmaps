@@ -13,6 +13,7 @@ Depends:
     R (>= 2.14),
     ggplot2 (>= 2.0.0)
 Suggests:
+    dplyr,
     plyr,
     reshape2,
     testthat,
@@ -21,3 +22,4 @@ Suggests:
 VignetteBuilder: knitr
 LazyData: yes
 RoxygenNote: 5.0.1
+Encoding: UTF-8
