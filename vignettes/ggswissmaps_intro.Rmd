@@ -84,3 +84,30 @@ ggplot(shp_df[["g1k15"]], aes(x = long, y = lat, group = group)) +
 ```
 
 
+### Extract a subset of a territory and make a map
+
+The `maps2` object, used above, is a list with some maps of swiss territory at various levels (grand regions, cantons, districts, ...).
+
+What if one wants to draw a map with a sub-territory? For example, what if I want to have a map with the districts of two cantons? First, I have to select the desired subset from the `shp_df` data, and then will apply the `maps2_` function to it. 
+
+```{r message=FALSE}
+# Data frame with the coordinates of all swiss districts
+d <- shp_df[["g1b15"]]
+
+# Look at the structure of the data frame
+str(d)
+
+# The cantons are identified by the KTNR column
+
+# Extract from this data the districts of two cantons
+library(dplyr)
+d <- d %>% dplyr::filter(KTNR %in% c(18, 21))
+
+# And draw the map
+maps2_(d)
+```
+
+
+
+
+
