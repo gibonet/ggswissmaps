@@ -4,16 +4,22 @@ author: "gibo"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{ggswissmaps intro}
   %\VignetteEngine{knitr::rmarkdown}
   \usepackage[utf8]{inputenc}
 ---
 
 ## Installation
 
-You can install the package with `devtools::install_github`:
+The package can be installed from CRAN:
 
-```{r eval=FALSE}
+```
+install.packages("ggswissmaps")
+```
+
+or from github:
+
+```
 # install.packages("devtools")
 devtools::install_github("gibonet/ggswissmaps")
 ```
@@ -40,8 +46,6 @@ There is some data:
 ```{r}
 data(package = "ggswissmaps")
 ```
-
-
 
 
 ## Examples
