@@ -3,7 +3,7 @@ Title: Offers Various Swiss Maps as ggplot2 Objects
 Description: Offers various swiss maps as ggplot2 objects and gives the
     possibility to add layers of data on the maps. Data are publicly available
     from the swiss federal statistical office.
-Version: 0.0.8
+Version: 0.0.8.9000
 License: GPL-2
 Authors@R: c(
   person("Sandro", "Petrillo Burri", email = "gibo.gaf@gmail.com", role = c("aut", "cre")), 
@@ -18,7 +18,8 @@ Suggests:
     reshape2,
     testthat,
     data.table,
-    knitr
+    knitr,
+    rmarkdown
 VignetteBuilder: knitr
 LazyData: yes
 RoxygenNote: 5.0.1
