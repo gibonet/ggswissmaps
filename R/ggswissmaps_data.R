@@ -3,14 +3,16 @@
 
 
 
-#' Offers various swiss maps as ggplot2 objects.
+#' Offers various swiss maps as 'ggplot2' objects.
 #'
-#' Offers various swiss maps as ggplot2 objects and gives the possibility
+#' Offers various swiss maps as 'ggplot2' objects and gives the possibility
 #' to add layers of data on the maps. Data are publicly available from the
-#' swiss federal statistical office.
-#'
-#' There are only two objects in package \pkg{ggswissmaps}:
-#' \code{theme_white} (for white background of ggplot2 objects) and \code{maps} (a list of 8 swiss maps).
+#' swiss federal statistical office. 
+#' In addition to the \code{maps2} object (a list of 16 swiss maps, at 
+#' various levels), there are the data frames with the boundaries used to
+#' produce these maps (\code{shp_df}, a list with 16 data frames).
+#' 
+#' See the package vignette for some examples (\code{vignette("ggswissmaps_intro", package = "ggswissmaps")}).
 #' 
 #' 
 #' @docType package
@@ -38,7 +40,7 @@ NULL
 
 #' A list with 16 data frames of swiss territory boundaries, at various levels.
 #'
-#' Every element of the list is a data frame, which can be used with ggplot2.
+#' Every element of the list is a data frame, which can be used with 'ggplot2'.
 #'
 #' Columns are not all the same across data frames, but usually they have the following in common:
 #' \itemize{
@@ -58,9 +60,9 @@ NULL
 #' @name shp_df
 NULL
 
-#' A list with 16 ggplot2 objects of swiss territory boundaries, at various levels.
+#' A list with 16 'ggplot2' objects of swiss territory boundaries, at various levels.
 #'
-#' Every element of the list is a ggplot2 graphic, corresponding to an element of \code{shp_df}.
+#' Every element of the list is a 'ggplot2' graphic, corresponding to an element of \code{shp_df}.
 #'
 #' Columns are not all the same across data frames, but usually they have the following in common:
 #' \itemize{

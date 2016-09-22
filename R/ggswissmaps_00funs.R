@@ -1,4 +1,4 @@
-#' theme_white_f is a ggplot2 theme function that can be added to a ggplot2 object  
+#' theme_white_f is a 'ggplot2' theme function that can be added to a 'ggplot2' object  
 #' to eliminate axes, ticks and put white background
 #' 
 #' @param base_size base font size
@@ -22,7 +22,7 @@ theme_white_f <- function(base_size = 12, base_family = ""){
 
 
 
-#' Prepares the base of a map, starting from a data frame with longitude (long) and latitude (lat) coordinates, as a ggplot2 object
+#' Prepares the base of a map, starting from a data frame with longitude (long) and latitude (lat) coordinates, as a 'ggplot2' object
 #' 
 #' @param data data frame with longitude, latitude and group coordinates of a territory (polygons)
 #' @param mapping Aesthetic mappings, as character strings (\code{link{ggplot2::aes_string}}). Defaults are \code{x = "long"}, \code{y = "lat"} and \code{group = "group"} (these work with every element of the list \code{shp_df} of ggswissmaps)
