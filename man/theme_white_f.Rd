@@ -2,7 +2,7 @@
 % Please edit documentation in R/ggswissmaps_00funs.R
 \name{theme_white_f}
 \alias{theme_white_f}
-\title{theme_white_f is a ggplot2 theme function that can be added to a ggplot2 object  
+\title{theme_white_f is a 'ggplot2' theme function that can be added to a 'ggplot2' object  
 to eliminate axes, ticks and put white background}
 \usage{
 theme_white_f(base_size = 12, base_family = "")
@@ -13,7 +13,7 @@ theme_white_f(base_size = 12, base_family = "")
 \item{base_family}{base font family}
 }
 \description{
-theme_white_f is a ggplot2 theme function that can be added to a ggplot2 object  
+theme_white_f is a 'ggplot2' theme function that can be added to a 'ggplot2' object  
 to eliminate axes, ticks and put white background
 }
 

@@ -8,7 +8,7 @@
 \url{http://www.bfs.admin.ch/bfs/portal/fr/index/dienstleistungen/geostat/datenbeschreibung.html}
 }
 \description{
-Every element of the list is a data frame, which can be used with ggplot2.
+Every element of the list is a data frame, which can be used with 'ggplot2'.
 }
 \details{
 Columns are not all the same across data frames, but usually they have the following in common:

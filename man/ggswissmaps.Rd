@@ -4,14 +4,16 @@
 \name{ggswissmaps}
 \alias{ggswissmaps}
 \alias{ggswissmaps-package}
-\title{Offers various swiss maps as ggplot2 objects.}
+\title{Offers various swiss maps as 'ggplot2' objects.}
 \description{
-Offers various swiss maps as ggplot2 objects and gives the possibility
+Offers various swiss maps as 'ggplot2' objects and gives the possibility
 to add layers of data on the maps. Data are publicly available from the
-swiss federal statistical office.
+swiss federal statistical office. 
+In addition to the \code{maps2} object (a list of 16 swiss maps, at 
+various levels), there are the data frames with the boundaries used to
+produce these maps (\code{shp_df}, a list with 16 data frames).
 }
 \details{
-There are only two objects in package \pkg{ggswissmaps}:
-\code{theme_white} (for white background of ggplot2 objects) and \code{maps} (a list of 8 swiss maps).
+See the package vignette for some examples (\code{vignette("ggswissmaps_intro", package = "ggswissmaps")}).
 }
 
