@@ -1,3 +1,20 @@
+ggswissmaps 0.0.9
+----------------------------------------------------------------
+
+* Added single quotes around ggplot2 in DESCRIPTION and other documentation
+
+
+ggswissmaps 0.0.9
+----------------------------------------------------------------
+
+NEW FEATURES
+
+* New README.md file, with installation instructions
+* Added rmarkdown to suggested dependencies
+* Added an example of creation of a map of a sub-territory in the vignette
+
+
+
 ggswissmaps 0.0.8
 ----------------------------------------------------------------
 
