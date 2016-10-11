@@ -1,18 +1,15 @@
 
-
-
-
-
-#' Offers various swiss maps as 'ggplot2' objects.
+#' Offers various swiss maps as data frames and 'ggplot2' objects.
 #'
-#' Offers various swiss maps as 'ggplot2' objects and gives the possibility
-#' to add layers of data on the maps. Data are publicly available from the
-#' swiss federal statistical office. 
+#' Offers various swiss maps as data frames and 'ggplot2' objects 
+#' and gives the possibility to add layers of data on the maps. 
+#' Data are publicly available from the swiss federal statistical office. 
 #' In addition to the \code{maps2} object (a list of 16 swiss maps, at 
 #' various levels), there are the data frames with the boundaries used to
-#' produce these maps (\code{shp_df}, a list with 16 data frames).
+#' produce these maps (\code{shp_df}, a list with 8 data frames).
 #' 
-#' See the package vignette for some examples (\code{vignette("ggswissmaps_intro", package = "ggswissmaps")}).
+#' See the package vignette for some examples 
+#' (\code{vignette("ggswissmaps_intro", package = "ggswissmaps")}).
 #' 
 #' 
 #' @docType package
@@ -22,34 +19,19 @@
 NULL
 
 
-#' #' theme_white is a ggplot2 theme object and can be added to a ggplot2 object  
-#' #' to eliminate axes, ticks and put white background
-#' theme_white <- ggplot2::theme(
-#'   axis.title = element_blank(),
-#'   axis.text = element_blank(),
-#'   axis.ticks = element_blank(),
-#'   axis.line = element_blank(),
-#'   panel.background = element_blank(),
-#'   panel.border = element_blank(),
-#'   panel.margin = element_blank(),
-#'   panel.grid = element_blank()
-#' )
-#' #' @name theme_white
-#' NULL
-
-
-#' A list with 16 data frames of swiss territory boundaries, at various levels.
+#' A list with 8 data frames of swiss territory boundaries, at various levels.
 #'
 #' Every element of the list is a data frame, which can be used with 'ggplot2'.
 #'
-#' Columns are not all the same across data frames, but usually they have the following in common:
+#' Columns are not all the same across data frames, but usually they have the
+#' following in common:
 #' \itemize{
 #'   \item long. Longitude coordinate (x)
 #'   \item lat. Latitude coordinate (y)
 #'   \item group. A factor to be used to plot the polygons correctly (with ggplot2)
 #' }
 #'
-#' @format A list with 16 data frames with swiss territory boundaries (at various levels).
+#' @format A list with 8 data frames with swiss territory boundaries (at various levels).
 #' @source \url{http://www.bfs.admin.ch/bfs/portal/fr/index/dienstleistungen/geostat/datenbeschreibung.html}
 #' @examples
 #' data(shp_df)
@@ -60,9 +42,12 @@ NULL
 #' @name shp_df
 NULL
 
-#' A list with 16 'ggplot2' objects of swiss territory boundaries, at various levels.
+
+#' A list with 8 'ggplot2' objects of swiss territory boundaries, at various
+#' levels.
 #'
-#' Every element of the list is a 'ggplot2' graphic, corresponding to an element of \code{shp_df}.
+#' Every element of the list is a 'ggplot2' graphic, corresponding to an
+#' element of \code{shp_df}.
 #'
 #' Columns are not all the same across data frames, but usually they have the following in common:
 #' \itemize{
@@ -71,7 +56,7 @@ NULL
 #'   \item group. A factor to be used to plot the polygons correctly (with ggplot2)
 #' }
 #'
-#' @format A list with 16 data frames with swiss territory boundaries (at various levels).
+#' @format A list with 8 data frames with swiss territory boundaries (at various levels).
 #' @source \url{http://www.bfs.admin.ch/bfs/portal/fr/index/dienstleistungen/geostat/datenbeschreibung.html}
 #' @examples
 #' class(maps2)
