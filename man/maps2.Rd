@@ -2,13 +2,15 @@
 % Please edit documentation in R/ggswissmaps_data.R
 \name{maps2}
 \alias{maps2}
-\title{A list with 16 'ggplot2' objects of swiss territory boundaries, at various levels.}
-\format{A list with 16 data frames with swiss territory boundaries (at various levels).}
+\title{A list with 8 'ggplot2' objects of swiss territory boundaries, at various
+levels.}
+\format{A list with 8 data frames with swiss territory boundaries (at various levels).}
 \source{
 \url{http://www.bfs.admin.ch/bfs/portal/fr/index/dienstleistungen/geostat/datenbeschreibung.html}
 }
 \description{
-Every element of the list is a 'ggplot2' graphic, corresponding to an element of \code{shp_df}.
+Every element of the list is a 'ggplot2' graphic, corresponding to an
+element of \code{shp_df}.
 }
 \details{
 Columns are not all the same across data frames, but usually they have the following in common:

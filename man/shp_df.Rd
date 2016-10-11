@@ -2,8 +2,8 @@
 % Please edit documentation in R/ggswissmaps_data.R
 \name{shp_df}
 \alias{shp_df}
-\title{A list with 16 data frames of swiss territory boundaries, at various levels.}
-\format{A list with 16 data frames with swiss territory boundaries (at various levels).}
+\title{A list with 8 data frames of swiss territory boundaries, at various levels.}
+\format{A list with 8 data frames with swiss territory boundaries (at various levels).}
 \source{
 \url{http://www.bfs.admin.ch/bfs/portal/fr/index/dienstleistungen/geostat/datenbeschreibung.html}
 }
@@ -11,7 +11,8 @@
 Every element of the list is a data frame, which can be used with 'ggplot2'.
 }
 \details{
-Columns are not all the same across data frames, but usually they have the following in common:
+Columns are not all the same across data frames, but usually they have the
+following in common:
 \itemize{
   \item long. Longitude coordinate (x)
   \item lat. Latitude coordinate (y)

@@ -2,7 +2,8 @@
 % Please edit documentation in R/ggswissmaps_00funs.R
 \name{maps2_}
 \alias{maps2_}
-\title{Prepares the base of a map, starting from a data frame with longitude (long) and latitude (lat) coordinates, as a 'ggplot2' object}
+\title{Prepares the base of a map, starting from a data frame with longitude (long)
+and latitude (lat) coordinates, as a 'ggplot2' object}
 \usage{
 maps2_(data, mapping = ggplot2::aes_string(x = "long", y = "lat", group =
   "group"))
@@ -13,7 +14,8 @@ maps2_(data, mapping = ggplot2::aes_string(x = "long", y = "lat", group =
 \item{mapping}{Aesthetic mappings, as character strings (\code{link{ggplot2::aes_string}}). Defaults are \code{x = "long"}, \code{y = "lat"} and \code{group = "group"} (these work with every element of the list \code{shp_df} of ggswissmaps)}
 }
 \description{
-Prepares the base of a map, starting from a data frame with longitude (long) and latitude (lat) coordinates, as a 'ggplot2' object
+Prepares the base of a map, starting from a data frame with longitude (long)
+and latitude (lat) coordinates, as a 'ggplot2' object
 }
 \examples{
 data(shp_df)

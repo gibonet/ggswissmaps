@@ -4,16 +4,17 @@
 \name{ggswissmaps}
 \alias{ggswissmaps}
 \alias{ggswissmaps-package}
-\title{Offers various swiss maps as 'ggplot2' objects.}
+\title{Offers various swiss maps as data frames and 'ggplot2' objects.}
 \description{
-Offers various swiss maps as 'ggplot2' objects and gives the possibility
-to add layers of data on the maps. Data are publicly available from the
-swiss federal statistical office. 
+Offers various swiss maps as data frames and 'ggplot2' objects 
+and gives the possibility to add layers of data on the maps. 
+Data are publicly available from the swiss federal statistical office. 
 In addition to the \code{maps2} object (a list of 16 swiss maps, at 
 various levels), there are the data frames with the boundaries used to
-produce these maps (\code{shp_df}, a list with 16 data frames).
+produce these maps (\code{shp_df}, a list with 8 data frames).
 }
 \details{
-See the package vignette for some examples (\code{vignette("ggswissmaps_intro", package = "ggswissmaps")}).
+See the package vignette for some examples 
+(\code{vignette("ggswissmaps_intro", package = "ggswissmaps")}).
 }
 
