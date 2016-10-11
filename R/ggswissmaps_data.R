@@ -22,20 +22,20 @@
 NULL
 
 
-#' theme_white is a ggplot2 theme object and can be added to a ggplot2 object  
-#' to eliminate axes, ticks and put white background
-theme_white <- ggplot2::theme(
-  axis.title=element_blank(),
-  axis.text=element_blank(),
-  axis.ticks=element_blank(),
-  axis.line=element_blank(),
-  panel.background=element_blank(),
-  panel.border=element_blank(),
-  panel.margin=element_blank(),
-  panel.grid=element_blank()
-)
-#' @name theme_white
-NULL
+#' #' theme_white is a ggplot2 theme object and can be added to a ggplot2 object  
+#' #' to eliminate axes, ticks and put white background
+#' theme_white <- ggplot2::theme(
+#'   axis.title = element_blank(),
+#'   axis.text = element_blank(),
+#'   axis.ticks = element_blank(),
+#'   axis.line = element_blank(),
+#'   panel.background = element_blank(),
+#'   panel.border = element_blank(),
+#'   panel.margin = element_blank(),
+#'   panel.grid = element_blank()
+#' )
+#' #' @name theme_white
+#' NULL
 
 
 #' A list with 16 data frames of swiss territory boundaries, at various levels.
