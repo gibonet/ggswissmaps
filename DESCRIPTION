@@ -1,6 +1,6 @@
 Package: ggswissmaps
-Title: Offers Various Swiss Maps as 'ggplot2' Objects
-Description: Offers various swiss maps as 'ggplot2' objects and gives the
+Title: Offers Various Swiss Maps as Data Frames and 'ggplot2' Objects
+Description: Offers various swiss maps as data frames and 'ggplot2' objects and gives the
     possibility to add layers of data on the maps. Data are publicly available
     from the swiss federal statistical office.
 Version: 0.1.0
