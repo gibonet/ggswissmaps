@@ -1,6 +1,10 @@
 ggswissmaps 0.1.0
 ----------------------------------------------------------------
 
+* The code of the maps2_ function has been shortened, with the introduction
+  of theme_white_f. The result of the function is the same.
+* The number of data frames with map coordinates has been reduced
+  from 16 to 8 (shp_df data). 
 * Object theme_white has been deleted. This object used 'panel.margin' 
   argument, that will be deprecated in the next release of 'ggplot2'. 
   Instead of changing it to the new argument 'panel.spacing', we deleted it
