@@ -5,6 +5,7 @@ Description: Offers various swiss maps as data frames and 'ggplot2' objects and 
     from the swiss federal statistical office.
 Version: 0.1.0
 License: GPL-2
+URL: https://github.com/gibonet/ggswissmaps
 Authors@R: c(
   person("Sandro", "Petrillo Burri", email = "gibo.gaf@gmail.com", role = c("aut", "cre")), 
   person("Eric", "Stephani", email = "eric.stephani@bluewin.ch", role = "aut"), 
