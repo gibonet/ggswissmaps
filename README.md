@@ -1,5 +1,8 @@
 # ggswissmaps
 
+[![Travis-CI Build Status](https://travis-ci.org/gibonet/ggswissmaps.svg?branch=master)](https://travis-ci.org/gibonet/ggswissmaps)
+
+
 R package
 
 
