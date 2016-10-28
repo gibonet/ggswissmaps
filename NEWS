@@ -1,15 +1,22 @@
+ggswissmaps 0.1.1
+----------------------------------------------------------------
+
+* The object `maps2` is now created when the package is loaded. This has
+  reduced the installed size of the package to about 1 MB.
+
+
 ggswissmaps 0.1.0
 ----------------------------------------------------------------
 
-* The code of the maps2_ function has been shortened, with the introduction
-  of theme_white_f. The result of the function is the same.
+* The code of the `maps2_()` function has been shortened, with the introduction
+  of `theme_white_f`. The result of the function is the same.
 * The number of data frames with map coordinates has been reduced
-  from 16 to 8 (shp_df data). 
-* Object theme_white has been deleted. This object used 'panel.margin' 
-  argument, that will be deprecated in the next release of 'ggplot2'. 
-  Instead of changing it to the new argument 'panel.spacing', we deleted it
+  from 16 to 8 (`shp_df` data). 
+* Object `theme_white` has been deleted. This object used `panel.margin` 
+  argument, that will be deprecated in the next release of `ggplot2`. 
+  Instead of changing it to the new argument `panel.spacing`, we deleted it
   since in any case it was no more used and neither exported to the NAMESPACE.
-* Added single quotes around ggplot2 in DESCRIPTION and other documentation.
+* Added single quotes around `ggplot2` in DESCRIPTION and other documentation.
 
 
 ggswissmaps 0.0.9
@@ -18,7 +25,7 @@ ggswissmaps 0.0.9
 NEW FEATURES
 
 * New README.md file, with installation instructions.
-* Added rmarkdown to suggested dependencies.
+* Added `rmarkdown` to suggested dependencies.
 * Added an example of creation of a map of a sub-territory in the vignette.
 
 
@@ -28,10 +35,10 @@ ggswissmaps 0.0.8
 
 NEW FEATURES
 
-* Added function maps2_
-* The object maps2 is created dynamically with the function maps2_ and is
-  available simply by writing it (it is no more necessary to load it with data
-  (maps2)).
+* Added function `maps2_()`
+* The object `maps2` is created dynamically with the function `maps2_()` and is
+  available simply by writing it (it is no more necessary to load it with `data
+  (maps2))`.
 * The size of the package source (tar.gz) has been reduced form about 1.5 MB
   to 0.6 MB.
 
@@ -42,8 +49,8 @@ ggswissmaps 0.0.7
 
 NEW FEATURES
 
-* Works with ggplot2 >= 2.0.0.9001
-* Object "maps" removed (redundant, use data(maps2)).
+* Works with `ggplot2` >= 2.0.0.9001
+* Object `maps` removed (redundant, use `data(maps2)`).
 
 
 
@@ -52,7 +59,7 @@ ggswissmaps 0.0.6
 
 NEW FEATURES
 
-* Reduced the number of elements in list maps2, from 158 to 16 
+* Reduced the number of elements in list `maps2`, from 158 to 16 
   (installed size consequently reduced from about 70MB to 6MB).
 
 
@@ -62,14 +69,14 @@ ggswissmaps 0.0.3.9002
 
 NEW FEATURES
 
-* Works with ggplot2 >= 2.0.0
+* Works with `ggplot2` >= 2.0.0
 * Two new contributors.
-* Added data frames of swiss boundaries, from 2008 to 2015 (object shp_df)
-* Added swiss maps (as ggplot objects), from 2008 to 2015 (data from each 
-  year is of January, first): object maps2.
+* Added data frames of swiss boundaries, from 2008 to 2015 (object `shp_df`)
+* Added swiss maps (as `ggplot` objects), from 2008 to 2015 (data from each 
+  year is of January, first): object `maps2`.
 * Added a package vignette.
-* Type Type help(package="ggswissmaps") to run documentation.
-* Type browseVignettes("ggswissmaps") to run package vignette.
+* Type `help(package="ggswissmaps")` to run documentation.
+* Type `browseVignettes("ggswissmaps")` to run package vignette.
 
 
 
@@ -79,7 +86,7 @@ ggswissmaps 0.0.2
 NEW FEATURES
 
 * Added title in title case.
-* Very first version of the (cran) package. Type help(package="ggswissmaps") 
+* Very first version of the (cran) package. Type `help(package="ggswissmaps")` 
   to run documentation. 
 
 
@@ -88,7 +95,7 @@ ggswissmaps 0.0.1
 
 NEW FEATURES
 
-* Very first version of the (cran) package. Type help(package="ggswissmaps") 
+* Very first version of the (cran) package. Type `help(package="ggswissmaps")` 
   to run documentation. 
 
 
@@ -97,5 +104,5 @@ ggswissmaps 0.0.0
 
 NEW FEATURES
 
-* Very first version of the package. Type help(package="ggswissmaps") 
+* Very first version of the package. Type `help(package="ggswissmaps")` 
   to run documentation. 
