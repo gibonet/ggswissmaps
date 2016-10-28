@@ -71,8 +71,11 @@ NULL
 #' maps2[[5]]
 #' @export
 #' @name maps2
-data("shp_df", envir = parent.env(environment()))
-maps2 <- lapply(shp_df, maps2_)
+maps2 <- NULL
+
+# utils::data("shp_df", envir = parent.env(environment()))
+# maps2 <- lapply(shp_df, maps2_)
+# rm(shp_df, envir = parent.env(environment()))
 
 # Sostituito le due righe qui sotto (0.0.7) (e tolto maps2.rda dalla cartella data/)
 # #' @name maps2

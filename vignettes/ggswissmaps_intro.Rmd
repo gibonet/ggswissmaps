@@ -9,58 +9,25 @@ vignette: >
   \usepackage[utf8]{inputenc}
 ---
 
-## Installation
-
-The package can be installed from CRAN:
-
-```
-install.packages("ggswissmaps")
-```
-
-or from github:
-
-```
-# install.packages("devtools")
-devtools::install_github("gibonet/ggswissmaps")
-```
-
-## Content
-
-First of all, load the package:
-```{r}
-library(ggswissmaps)
-```
-
-We can use the `ls` function to look at the content:
-```{r}
-ls("package:ggswissmaps")
-```
-
-Or launch the help:
-```{r eval = FALSE}
-utils::help(package = "ggswissmaps")
-```
-
-
-There is some data:
-```{r}
-data(package = "ggswissmaps")
-```
-
 
 ## Examples
 
 ### Using the data
 
 ```{r}
+library(ggswissmaps)
+
 data("shp_df")
 class(shp_df)
 length(shp_df)
 names(shp_df)
+```
 
+```{r eval=FALSE}
 # Data description
 ?shp_df
 ```
+
 
 ### Some maps
 

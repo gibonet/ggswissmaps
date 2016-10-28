@@ -13,6 +13,8 @@ Authors@R: c(
 Depends:
     R (>= 2.14),
     ggplot2 (>= 2.0.0)
+Imports:
+    utils
 Suggests:
     dplyr,
     plyr,
