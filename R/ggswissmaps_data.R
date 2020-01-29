@@ -4,7 +4,7 @@
 #' Offers various swiss maps as data frames and 'ggplot2' objects 
 #' and gives the possibility to add layers of data on the maps. 
 #' Data are publicly available from the swiss federal statistical office. 
-#' In addition to the \code{maps2} object (a list of 16 swiss maps, at 
+#' In addition to the \code{maps2} object (a list of 8 swiss maps, at 
 #' various levels), there are the data frames with the boundaries used to
 #' produce these maps (\code{shp_df}, a list with 8 data frames).
 #' 
@@ -32,7 +32,7 @@ NULL
 #' }
 #'
 #' @format A list with 8 data frames with swiss territory boundaries (at various levels).
-#' @source \url{http://www.bfs.admin.ch/bfs/portal/fr/index/dienstleistungen/geostat/datenbeschreibung.html}
+#' @source \url{https://www.bfs.admin.ch/bfs/fr/home/services/geostat/geodonnees-statistique-federale/limites-administratives/limites-communales-generalisees.html}. Download date: 2015-08-18
 #' @examples
 #' data(shp_df)
 #' class(shp_df)
@@ -57,7 +57,7 @@ NULL
 #' }
 #'
 #' @format A list with 8 data frames with swiss territory boundaries (at various levels).
-#' @source \url{http://www.bfs.admin.ch/bfs/portal/fr/index/dienstleistungen/geostat/datenbeschreibung.html}
+#' @source \url{https://www.bfs.admin.ch/bfs/fr/home/services/geostat/geodonnees-statistique-federale/limites-administratives/limites-communales-generalisees.html}. Download date: 2015-08-18
 #' @examples
 #' class(maps2)
 #' length(maps2)
@@ -72,6 +72,29 @@ NULL
 #' @export
 #' @name maps2
 maps2 <- NULL
+
+
+#' A list with 8 'sf' objects of swiss territory boundaries, at various levels.
+#'
+#' Every element of the list is a 'sf' data frame, which can be used with 'ggplot2'.
+#'
+#' Every 'sf' data frame has a column "geometry", which is a list-column containing
+#' the boundaries of the polygons.
+#' 
+#' See the vignette (\code{vignette("ggswissmaps_with_sf", package = "ggswissmaps")}) 
+#' for some examples.
+#'
+#' @format A list with 8 'sf' data frames with swiss territory boundaries (at various levels).
+#' @source \url{https://www.bfs.admin.ch/bfs/fr/home/services/geostat/geodonnees-statistique-federale/limites-administratives/limites-communales-generalisees.html}. Download date: 2015-08-18
+#' @examples
+#' data(shp_sf)
+#' class(shp_sf)
+#' length(shp_sf)
+#' names(shp_sf)
+#' str(shp_sf[["g1k15"]])
+#' @name shp_sf
+NULL
+
 
 # utils::data("shp_df", envir = parent.env(environment()))
 # maps2 <- lapply(shp_df, maps2_)

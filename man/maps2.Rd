@@ -7,7 +7,7 @@
 levels.}
 \format{A list with 8 data frames with swiss territory boundaries (at various levels).}
 \source{
-\url{http://www.bfs.admin.ch/bfs/portal/fr/index/dienstleistungen/geostat/datenbeschreibung.html}
+\url{https://www.bfs.admin.ch/bfs/fr/home/services/geostat/geodonnees-statistique-federale/limites-administratives/limites-communales-generalisees.html}. Download date: 2015-08-18
 }
 \usage{
 maps2
@@ -37,4 +37,3 @@ maps2[["g1k15"]]
 maps2[[5]]
 }
 \keyword{datasets}
-

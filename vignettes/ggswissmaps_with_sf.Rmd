@@ -1,0 +1,70 @@
+---
+title: "`ggswissmaps` data with `sf`"
+author: "gibo"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ggswissmaps with sf}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  dev = "svg"
+)
+```
+
+
+From version `0.1.2`, `ggswissmaps` includes boundaries of Switzerland, at various levels, also in `sf` format. The 8 objects are stored in the list `shp_sf`:
+
+```{r}
+library(ggswissmaps)
+# str(shp_sf)  # Very long output...
+
+class(shp_sf)
+length(shp_sf)
+lapply(shp_sf, class)
+names(shp_sf)
+```
+
+
+# Use `ggswissmaps` with `sf`
+
+The boundaries stored in the list `shp_sf` can be used with `ggplot2::geom_sf()`:  
+
+```{r}
+library(ggplot2)
+ggplot(shp_sf[["g1k15"]]) + geom_sf()
+```
+
+
+The green background can be removed for example with `ggswissmaps::theme_white_f()` or other `ggplot2` themes, while the green background inside the boundaries can be removed by setting `fill = NA` in `ggplot2::geom_sf()`:
+
+```{r}
+ggplot(shp_sf[["g1k15"]]) + 
+  geom_sf(fill = NA) + 
+  ggswissmaps::theme_white_f()
+```
+
+
+
+
+# Coordinate reference system (crs)
+
+Note that all the 'sf' data frames stored in the list `shp_sf` have the coordinate reference system (crs) corrensponding to "EPSG: 21781". This can be verified with `sf::st_crs()`:
+
+```{r}
+library(sf)
+st_crs(shp_sf[[1]])
+```
+
+I think that this is the "old" swiss crs, while the newest one is "EPSG: 2056". In order to change the crs we can use `st::st_transform()`:
+
+```{r}
+tmp <- st_transform(shp_sf[[1]], crs = 2056)
+st_crs(tmp)
+```
+

@@ -6,12 +6,14 @@
 and latitude (lat) coordinates, as a 'ggplot2' object}
 \usage{
 maps2_(data, mapping = ggplot2::aes_string(x = "long", y = "lat", group =
-  "group"))
+  "group"), caption = "Boundaries: BFS GEOSTAT / swisstopo")
 }
 \arguments{
 \item{data}{data frame with longitude, latitude and group coordinates of a territory (polygons)}
 
 \item{mapping}{Aesthetic mappings, as character strings (\code{link{ggplot2::aes_string}}). Defaults are \code{x = "long"}, \code{y = "lat"} and \code{group = "group"} (these work with every element of the list \code{shp_df} of ggswissmaps)}
+
+\item{caption}{text to include in the lower right corner of the map (default: "Boundaries: BFS GEOSTAT / swisstopo")}
 }
 \description{
 Prepares the base of a map, starting from a data frame with longitude (long)
@@ -21,4 +23,3 @@ and latitude (lat) coordinates, as a 'ggplot2' object
 data(shp_df)
 maps2_(data = shp_df[[1]])
 }
-

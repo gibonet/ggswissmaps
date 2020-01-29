@@ -27,6 +27,7 @@ theme_white_f <- function(base_size = 12, base_family = ""){
 #' 
 #' @param data data frame with longitude, latitude and group coordinates of a territory (polygons)
 #' @param mapping Aesthetic mappings, as character strings (\code{link{ggplot2::aes_string}}). Defaults are \code{x = "long"}, \code{y = "lat"} and \code{group = "group"} (these work with every element of the list \code{shp_df} of ggswissmaps)
+#' @param caption text to include in the lower right corner of the map (default: "Boundaries: BFS GEOSTAT / swisstopo")
 #' 
 #'  
 #' @examples 
@@ -38,11 +39,14 @@ maps2_ <-
            mapping = 
              ggplot2::aes_string(x = "long",
                                  y = "lat",
-                                 group = "group")){
+                                 group = "group"),
+           caption = "Boundaries: BFS GEOSTAT / swisstopo"){
     ggplot2::ggplot(data = data, mapping = mapping) +
     ggplot2::geom_path() +
     ggplot2::coord_equal() +
-      theme_white_f()
+      theme_white_f() +
+      ggplot2::labs(x = NULL, y = NULL, 
+                    caption = caption)
 }
 
 # data(shp_df)

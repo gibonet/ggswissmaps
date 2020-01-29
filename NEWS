@@ -1,3 +1,19 @@
+ggswissmaps 0.1.2
+----------------------------------------------------------------
+
+* Removed `plyr`, `reshape2` and `data.table` from "Suggests".
+* Added `sf` to "Suggests".
+* Moved `ggplot2` from "Depends" to "Imports". 
+* Added the 8 maps in `sf` format.
+* Added a vignette "`ggswissmaps` data with `sf`", with some examples of how 
+  to use `ggswissmaps` data in `sf` format.
+* Changed/corrected a broken url
+* Added the argument caption to function maps2_(), with default value 
+  "Boundaries: BFS GEOSTAT / swisstopo". The caption 
+  will be included in the lower right corner of the map
+
+
+
 ggswissmaps 0.1.1
 ----------------------------------------------------------------
 

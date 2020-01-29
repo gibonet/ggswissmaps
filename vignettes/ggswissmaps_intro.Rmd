@@ -9,6 +9,15 @@ vignette: >
   \usepackage[utf8]{inputenc}
 ---
 
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  dev = "svg"
+)
+```
+
+
 
 ## Examples
 
@@ -44,10 +53,12 @@ maps2[[5]]
 The objects contained in `maps2` are `ggplot` objects. They have been created with `ggplot2::ggplot` plus a `ggplot2::geom_path` layer with the data in `shp_df`. As an example, the previous map is the same as:
 
 ```{r}
+library(ggplot2)
 ggplot(shp_df[["g1k15"]], aes(x = long, y = lat, group = group)) +
   geom_path() +
   coord_equal() +
-  theme_white_f()
+  theme_white_f() +
+  labs(x = NULL, y = NULL, caption = "Boundaries: BFS GEOSTAT / swisstopo")
 ```
 
 

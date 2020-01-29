@@ -16,4 +16,3 @@ theme_white_f(base_size = 12, base_family = "")
 theme_white_f is a 'ggplot2' theme function that can be added to a 'ggplot2'
 object to eliminate axes, ticks and put white background
 }
-
