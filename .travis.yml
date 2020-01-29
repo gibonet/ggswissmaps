@@ -1,5 +1,10 @@
-language: r
+language: R
 sudo: false
+cache: packages
+r:
+- oldrel
+- release
+- devel
 
 apt_packages:
   - libudunits2-dev
