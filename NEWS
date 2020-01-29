@@ -10,7 +10,7 @@ ggswissmaps 0.1.2
 * Changed/corrected a broken url
 * Added the argument caption to function maps2_(), with default value 
   "Boundaries: BFS GEOSTAT / swisstopo". The caption 
-  will be included in the lower right corner of the map
+  will be included in the lower right corner of the map 
 
 
 
