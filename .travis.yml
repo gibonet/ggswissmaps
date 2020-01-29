@@ -1,4 +1,7 @@
 language: r
 sudo: false
 
+apt_packages:
+  - libudunits2-dev
+
 
