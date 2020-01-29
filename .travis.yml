@@ -3,5 +3,8 @@ sudo: false
 
 apt_packages:
   - libudunits2-dev
+  - libgeos-dev
+  - libgdal-dev
+
 
 
