@@ -1,6 +1,6 @@
 # ggswissmaps
 
-[![Travis-CI Build Status](https://travis-ci.org/gibonet/ggswissmaps.svg?branch=master)](https://travis-ci.org/gibonet/ggswissmaps) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/ggswissmaps)](http://cran.r-project.org/package=ggswissmaps)
+[![R build status](https://github.com/gibonet/ggswissmaps/workflows/R-CMD-check/badge.svg)](https://github.com/gibonet/ggswissmaps/actions) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/ggswissmaps)](http://cran.r-project.org/package=ggswissmaps)
 
 
 R package
