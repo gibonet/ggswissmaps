@@ -5,8 +5,11 @@
 \title{Prepares the base of a map, starting from a data frame with longitude (long)
 and latitude (lat) coordinates, as a 'ggplot2' object}
 \usage{
-maps2_(data, mapping = ggplot2::aes_string(x = "long", y = "lat", group =
-  "group"), caption = "Boundaries: BFS GEOSTAT / swisstopo")
+maps2_(
+  data,
+  mapping = ggplot2::aes_string(x = "long", y = "lat", group = "group"),
+  caption = "Boundaries: BFS GEOSTAT / swisstopo"
+)
 }
 \arguments{
 \item{data}{data frame with longitude, latitude and group coordinates of a territory (polygons)}

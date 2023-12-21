@@ -3,7 +3,9 @@
 \name{shp_df}
 \alias{shp_df}
 \title{A list with 8 data frames of swiss territory boundaries, at various levels.}
-\format{A list with 8 data frames with swiss territory boundaries (at various levels).}
+\format{
+A list with 8 data frames with swiss territory boundaries (at various levels).
+}
 \source{
 \url{https://www.bfs.admin.ch/bfs/fr/home/services/geostat/geodonnees-statistique-federale/limites-administratives/limites-communales-generalisees.html}. Download date: 2015-08-18
 }

@@ -5,7 +5,9 @@
 \alias{maps2}
 \title{A list with 8 'ggplot2' objects of swiss territory boundaries, at various
 levels.}
-\format{A list with 8 data frames with swiss territory boundaries (at various levels).}
+\format{
+A list with 8 data frames with swiss territory boundaries (at various levels).
+}
 \source{
 \url{https://www.bfs.admin.ch/bfs/fr/home/services/geostat/geodonnees-statistique-federale/limites-administratives/limites-communales-generalisees.html}. Download date: 2015-08-18
 }

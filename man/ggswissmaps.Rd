@@ -3,7 +3,6 @@
 \docType{package}
 \name{ggswissmaps}
 \alias{ggswissmaps}
-\alias{ggswissmaps-package}
 \title{Offers various swiss maps as data frames and 'ggplot2' objects.}
 \description{
 Offers various swiss maps as data frames and 'ggplot2' objects 
