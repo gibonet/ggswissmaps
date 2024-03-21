@@ -3,3 +3,6 @@
 ^\.travis\.yml$
 ^\.github
 ^\.github$
+
+check.R
+ggswissmaps-report.html
