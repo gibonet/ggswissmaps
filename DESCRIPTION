@@ -2,12 +2,15 @@ Package: ggswissmaps
 Title: Offers Various Swiss Maps as Data Frames and 'ggplot2' Objects
 Description: Offers various swiss maps as data frames and 'ggplot2' objects and gives the
     possibility to add layers of data on the maps. Data are publicly available
-    from the swiss federal statistical office.
+    from the swiss federal statistical office. In addition to the \code{maps2} 
+    object (a list of 8 swiss maps, at various levels), there are the data 
+    frames with the boundaries used to produce these maps 
+    (\code{shp_df}, a list with 8 data frames).
 Version: 0.1.2
 License: GPL-2
 URL: https://github.com/gibonet/ggswissmaps
 Authors@R: c(
-  person("Sandro", "Petrillo Burri", email = "gibo.gaf@gmail.com", role = c("aut", "cre")), 
+  person("Sandro", "Burri", email = "gibo.gaf@gmail.com", role = c("aut", "cre")), 
   person("Eric", "Stephani", email = "eric.stephani@bluewin.ch", role = "aut"), 
   person("Lisa", "Bottinelli", email = "lisa.bottinelli@gmail.com", role = "ctb"))
 Depends:
@@ -22,5 +25,5 @@ Suggests:
     rmarkdown
 VignetteBuilder: knitr
 LazyData: yes
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Encoding: UTF-8
