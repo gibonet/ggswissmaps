@@ -18,8 +18,6 @@ Depends:
 Imports:
     utils, ggplot2 (>= 2.0.0)
 Suggests:
-    dplyr,
-    testthat,
     sf,
     knitr,
     rmarkdown
