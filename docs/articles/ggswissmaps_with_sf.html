@@ -79,12 +79,11 @@
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>
-<code>ggswissmaps</code> data with
-<code>sf</code>
+<code>ggswissmaps</code> data with <code>sf</code>
 </h1>
                         <h4 data-toc-skip class="author">gibo</h4>
             
-            <h4 data-toc-skip class="date">2024-03-21</h4>
+            <h4 data-toc-skip class="date">2025-05-12</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/gibonet/ggswissmaps/blob/HEAD/vignettes/ggswissmaps_with_sf.Rmd" class="external-link"><code>vignettes/ggswissmaps_with_sf.Rmd</code></a></small>
       <div class="hidden name"><code>ggswissmaps_with_sf.Rmd</code></div>
@@ -93,9 +92,7 @@
 
     
     
-<p>From version <code>0.1.2</code>, <code>ggswissmaps</code> includes
-boundaries of Switzerland, at various levels, also in <code>sf</code>
-format. The 8 objects are stored in the list <code>shp_sf</code>:</p>
+<p>From version <code>0.1.2</code>, <code>ggswissmaps</code> includes boundaries of Switzerland, at various levels, also in <code>sf</code> format. The 8 objects are stored in the list <code>shp_sf</code>:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/gibonet/ggswissmaps" class="external-link">ggswissmaps</a></span><span class="op">)</span></span>
 <span><span class="co"># str(shp_sf)  # Very long output...</span></span>
@@ -134,8 +131,7 @@ format. The 8 objects are stored in the list <code>shp_sf</code>:</p>
 <div class="section level2">
 <h2 id="use-ggswissmaps-with-sf">Use <code>ggswissmaps</code> with <code>sf</code><a class="anchor" aria-label="anchor" href="#use-ggswissmaps-with-sf"></a>
 </h2>
-<p>The boundaries stored in the list <code>shp_sf</code> can be used
-with <code><a href="https://ggplot2.tidyverse.org/reference/ggsf.html" class="external-link">ggplot2::geom_sf()</a></code>:</p>
+<p>The boundaries stored in the list <code>shp_sf</code> can be used with <code><a href="https://ggplot2.tidyverse.org/reference/ggsf.html" class="external-link">ggplot2::geom_sf()</a></code>:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">shp_sf</span><span class="op">[[</span><span class="st">"g1k15"</span><span class="op">]</span><span class="op">]</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html" class="external-link">geom_sf</a></span><span class="op">(</span><span class="op">)</span></span>
@@ -143,11 +139,7 @@ with <code><a href="https://ggplot2.tidyverse.org/reference/ggsf.html" class="ex
 <span><span class="co">#&gt; old-style crs object detected; please recreate object with a recent sf::st_crs()</span></span>
 <span><span class="co">#&gt; old-style crs object detected; please recreate object with a recent sf::st_crs()</span></span></code></pre></div>
 <p><img src="ggswissmaps_with_sf_files/figure-html/unnamed-chunk-2-1.png" width="700"></p>
-<p>The green background can be removed for example with
-<code><a href="../reference/theme_white_f.html">ggswissmaps::theme_white_f()</a></code> or other <code>ggplot2</code>
-themes, while the green background inside the boundaries can be removed
-by setting <code>fill = NA</code> in
-<code><a href="https://ggplot2.tidyverse.org/reference/ggsf.html" class="external-link">ggplot2::geom_sf()</a></code>:</p>
+<p>The gray background can be removed for example with <code><a href="../reference/theme_white_f.html">ggswissmaps::theme_white_f()</a></code> or other <code>ggplot2</code> themes, while the gray background inside the boundaries can be removed by setting <code>fill = NA</code> in <code><a href="https://ggplot2.tidyverse.org/reference/ggsf.html" class="external-link">ggplot2::geom_sf()</a></code>:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">shp_sf</span><span class="op">[[</span><span class="st">"g1k15"</span><span class="op">]</span><span class="op">]</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html" class="external-link">geom_sf</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="cn">NA</span><span class="op">)</span> <span class="op">+</span> </span>
@@ -160,13 +152,10 @@ by setting <code>fill = NA</code> in
 <div class="section level2">
 <h2 id="coordinate-reference-system-crs">Coordinate reference system (crs)<a class="anchor" aria-label="anchor" href="#coordinate-reference-system-crs"></a>
 </h2>
-<p>Note that all the ‘sf’ data frames stored in the list
-<code>shp_sf</code> have the coordinate reference system (crs)
-corrensponding to “EPSG: 21781”. This can be verified with
-<code><a href="https://r-spatial.github.io/sf/reference/st_crs.html" class="external-link">sf::st_crs()</a></code>:</p>
+<p>Note that all the ‘sf’ data frames stored in the list <code>shp_sf</code> have the coordinate reference system (crs) corrensponding to “EPSG: 21781”. This can be verified with <code><a href="https://r-spatial.github.io/sf/reference/st_crs.html" class="external-link">sf::st_crs()</a></code>:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span></span>
-<span><span class="co">#&gt; Linking to GEOS 3.12.0, GDAL 3.8.4, PROJ 9.4.0; sf_use_s2() is TRUE</span></span>
+<span><span class="co">#&gt; Linking to GEOS 3.10.2, GDAL 3.4.1, PROJ 7.2.1; sf_use_s2() is TRUE</span></span>
 <span><span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_crs.html" class="external-link">st_crs</a></span><span class="op">(</span><span class="va">shp_sf</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span>
 <span><span class="co">#&gt; old-style crs object detected; please recreate object with a recent sf::st_crs()</span></span>
 <span><span class="co">#&gt; Coordinate Reference System:</span></span>
@@ -216,9 +205,7 @@ corrensponding to “EPSG: 21781”. This can be verified with
 <span><span class="co">#&gt;         AREA["Liechtenstein; Switzerland."],</span></span>
 <span><span class="co">#&gt;         BBOX[45.82,5.96,47.81,10.49]],</span></span>
 <span><span class="co">#&gt;     ID["EPSG",21781]]</span></span></code></pre></div>
-<p>I think that this is the “old” swiss crs, while the newest one is
-“EPSG: 2056”. In order to change the crs we can use
-<code>st::st_transform()</code>:</p>
+<p>I think that this is the “old” swiss crs, while the newest one is “EPSG: 2056”. In order to change the crs we can use <code>st::st_transform()</code>:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">tmp</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_transform.html" class="external-link">st_transform</a></span><span class="op">(</span><span class="va">shp_sf</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>, crs <span class="op">=</span> <span class="fl">2056</span><span class="op">)</span></span>
 <span><span class="co">#&gt; old-style crs object detected; please recreate object with a recent sf::st_crs()</span></span>

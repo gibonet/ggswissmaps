@@ -46,4 +46,4 @@ report(cov, file = "ggswissmaps-report.html")
 
 # pkgdown ---------
 library(pkgdown)
-build_site()
+pkgdown::build_site()
