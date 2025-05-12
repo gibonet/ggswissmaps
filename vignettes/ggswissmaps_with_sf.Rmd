@@ -41,7 +41,7 @@ ggplot(shp_sf[["g1k15"]]) + geom_sf()
 ```
 
 
-The green background can be removed for example with `ggswissmaps::theme_white_f()` or other `ggplot2` themes, while the green background inside the boundaries can be removed by setting `fill = NA` in `ggplot2::geom_sf()`:
+The gray background can be removed for example with `ggswissmaps::theme_white_f()` or other `ggplot2` themes, while the gray background inside the boundaries can be removed by setting `fill = NA` in `ggplot2::geom_sf()`:
 
 ```{r}
 ggplot(shp_sf[["g1k15"]]) + 
