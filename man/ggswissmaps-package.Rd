@@ -12,6 +12,7 @@ Offers various swiss maps as data frames and 'ggplot2' objects and gives the pos
 Useful links:
 \itemize{
   \item \url{https://github.com/gibonet/ggswissmaps}
+  \item \url{http://gibonet.github.io/ggswissmaps/}
 }
 
 }

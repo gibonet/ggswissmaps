@@ -8,7 +8,7 @@ Description: Offers various swiss maps as data frames and 'ggplot2' objects and 
     (\code{shp_df}, a list with 8 data frames).
 Version: 0.1.2
 License: GPL-2
-URL: https://github.com/gibonet/ggswissmaps
+URL: https://github.com/gibonet/ggswissmaps, http://gibonet.github.io/ggswissmaps/
 Authors@R: c(
   person("Sandro", "Burri", email = "gibo.gaf@gmail.com", role = c("aut", "cre")), 
   person("Eric", "Stephani", email = "eric.stephani@bluewin.ch", role = "aut"), 
