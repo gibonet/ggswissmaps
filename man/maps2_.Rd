@@ -7,7 +7,8 @@ and latitude (lat) coordinates, as a 'ggplot2' object}
 \usage{
 maps2_(
   data,
-  mapping = ggplot2::aes_string(x = "long", y = "lat", group = "group"),
+  mapping = ggplot2::aes(x = .data[["long"]], y = .data[["lat"]], group =
+    .data[["group"]]),
   caption = "Boundaries: BFS GEOSTAT / swisstopo"
 )
 }
