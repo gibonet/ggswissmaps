@@ -7,7 +7,7 @@
 A list with 8 'sf' data frames with swiss territory boundaries (at various levels).
 }
 \source{
-\url{https://www.bfs.admin.ch/bfs/fr/home/services/geostat/geodonnees-statistique-federale/limites-administratives/limites-communales-generalisees.html}. Download date: 2015-08-18
+\url{https://data.geo.admin.ch/browser/index.html#/collections/ch.bfs.historisierte-administrative_grenzen_g1?.language=en}. Download date: 2015-08-18
 }
 \description{
 Every element of the list is a 'sf' data frame, which can be used with 'ggplot2'.

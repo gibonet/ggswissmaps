@@ -14,7 +14,7 @@
 #' }
 #'
 #' @format A list with 8 data frames with swiss territory boundaries (at various levels).
-#' @source \url{https://www.bfs.admin.ch/bfs/fr/home/services/geostat/geodonnees-statistique-federale/limites-administratives/limites-communales-generalisees.html}. Download date: 2015-08-18
+#' @source \url{https://data.geo.admin.ch/browser/index.html#/collections/ch.bfs.historisierte-administrative_grenzen_g1?.language=en}. Download date: 2015-08-18
 #' @examples
 #' data(shp_df)
 #' class(shp_df)
@@ -39,7 +39,7 @@ NULL
 #' }
 #'
 #' @format A list with 8 data frames with swiss territory boundaries (at various levels).
-#' @source \url{https://www.bfs.admin.ch/bfs/fr/home/services/geostat/geodonnees-statistique-federale/limites-administratives/limites-communales-generalisees.html}. Download date: 2015-08-18
+#' @source \url{https://data.geo.admin.ch/browser/index.html#/collections/ch.bfs.historisierte-administrative_grenzen_g1?.language=en}. Download date: 2015-08-18
 #' @examples
 #' class(maps2)
 #' length(maps2)
@@ -67,7 +67,7 @@ maps2 <- NULL
 #' for some examples.
 #'
 #' @format A list with 8 'sf' data frames with swiss territory boundaries (at various levels).
-#' @source \url{https://www.bfs.admin.ch/bfs/fr/home/services/geostat/geodonnees-statistique-federale/limites-administratives/limites-communales-generalisees.html}. Download date: 2015-08-18
+#' @source \url{https://data.geo.admin.ch/browser/index.html#/collections/ch.bfs.historisierte-administrative_grenzen_g1?.language=en}. Download date: 2015-08-18
 #' @examples
 #' data(shp_sf)
 #' class(shp_sf)
