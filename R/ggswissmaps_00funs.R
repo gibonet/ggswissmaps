@@ -37,9 +37,9 @@ theme_white_f <- function(base_size = 12, base_family = ""){
 maps2_ <- 
   function(data,
            mapping = 
-             ggplot2::aes_string(x = "long",
-                                 y = "lat",
-                                 group = "group"),
+             ggplot2::aes(x = .data[["long"]],
+                          y = .data[["lat"]],
+                          group = .data[["group"]]),
            caption = "Boundaries: BFS GEOSTAT / swisstopo"){
     ggplot2::ggplot(data = data, mapping = mapping) +
     ggplot2::geom_path() +
