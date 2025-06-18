@@ -8,7 +8,7 @@ See [ggswissmaps intro](https://gibonet.github.io/ggswissmaps/articles/ggswissma
 See [`ggswissmaps` data with `sf`](https://gibonet.github.io/ggswissmaps/articles/ggswissmaps_with_sf.html) for some examples of usage with `sf` data.
 
 
-# Installation
+## Installation
 
 The package can be installed from CRAN:
 
