@@ -4,7 +4,7 @@ pkgdown_sha: ~
 articles:
   ggswissmaps_intro: ggswissmaps_intro.html
   ggswissmaps_with_sf: ggswissmaps_with_sf.html
-last_built: 2025-06-18T14:51Z
+last_built: 2025-06-18T15:15Z
 urls:
   reference: http://gibonet.github.io/ggswissmaps/reference
   article: http://gibonet.github.io/ggswissmaps/articles
