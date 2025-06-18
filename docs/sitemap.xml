@@ -1,42 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/articles/ggswissmaps_intro.html</loc>
-  </url>
-  <url>
-    <loc>/articles/ggswissmaps_with_sf.html</loc>
-  </url>
-  <url>
-    <loc>/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/ggswissmaps-package.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/maps2.html</loc>
-  </url>
-  <url>
-    <loc>/reference/maps2_.html</loc>
-  </url>
-  <url>
-    <loc>/reference/shp_df.html</loc>
-  </url>
-  <url>
-    <loc>/reference/shp_sf.html</loc>
-  </url>
-  <url>
-    <loc>/reference/theme_white_f.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://gibonet.github.io/ggswissmaps/404.html</loc></url>
+<url><loc>https://gibonet.github.io/ggswissmaps/articles/ggswissmaps_intro.html</loc></url>
+<url><loc>https://gibonet.github.io/ggswissmaps/articles/ggswissmaps_with_sf.html</loc></url>
+<url><loc>https://gibonet.github.io/ggswissmaps/articles/index.html</loc></url>
+<url><loc>https://gibonet.github.io/ggswissmaps/authors.html</loc></url>
+<url><loc>https://gibonet.github.io/ggswissmaps/index.html</loc></url>
+<url><loc>https://gibonet.github.io/ggswissmaps/reference/ggswissmaps-package.html</loc></url>
+<url><loc>https://gibonet.github.io/ggswissmaps/reference/index.html</loc></url>
+<url><loc>https://gibonet.github.io/ggswissmaps/reference/maps2.html</loc></url>
+<url><loc>https://gibonet.github.io/ggswissmaps/reference/maps2_.html</loc></url>
+<url><loc>https://gibonet.github.io/ggswissmaps/reference/shp_df.html</loc></url>
+<url><loc>https://gibonet.github.io/ggswissmaps/reference/shp_sf.html</loc></url>
+<url><loc>https://gibonet.github.io/ggswissmaps/reference/theme_white_f.html</loc></url>
 </urlset>
+

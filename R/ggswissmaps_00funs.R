@@ -5,7 +5,9 @@
 #' @param base_family base font family
 #' @export
 theme_white_f <- function(base_size = 12, base_family = ""){
-  ggplot2::theme_bw(base_size = base_size, base_family = base_family) %+replace%
+  ggplot2::theme_bw(
+    base_size = base_size, base_family = base_family
+  ) %+replace%
     ggplot2::theme(
       legend.background = ggplot2::element_blank(),
       legend.key = ggplot2::element_blank(),
@@ -34,19 +36,18 @@ theme_white_f <- function(base_size = 12, base_family = ""){
 #' data(shp_df)
 #' maps2_(data = shp_df[[1]])
 #' @export
-maps2_ <- 
-  function(data,
-           mapping = 
-             ggplot2::aes(x = .data[["long"]],
-                          y = .data[["lat"]],
-                          group = .data[["group"]]),
-           caption = "Boundaries: BFS GEOSTAT / swisstopo"){
-    ggplot2::ggplot(data = data, mapping = mapping) +
+maps2_ <- function(data,
+                   mapping = ggplot2::aes(
+                     x = .data[["long"]],
+                     y = .data[["lat"]],
+                     group = .data[["group"]]
+                   ),
+                   caption = "Boundaries: BFS GEOSTAT / swisstopo") {
+  ggplot2::ggplot(data = data, mapping = mapping) +
     ggplot2::geom_path() +
     ggplot2::coord_equal() +
       theme_white_f() +
-      ggplot2::labs(x = NULL, y = NULL, 
-                    caption = caption)
+      ggplot2::labs(x = NULL, y = NULL, caption = caption)
 }
 
 # data(shp_df)
