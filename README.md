@@ -1,6 +1,6 @@
 # ggswissmaps
 
-[![R-CMD-check](https://github.com/gibonet/ggswissmaps/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/gibonet/ggswissmaps/actions/workflows/R-CMD-check.yaml)  [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/ggswissmaps)](http://cran.r-project.org/package=ggswissmaps)
+[![R-CMD-check](https://github.com/gibonet/ggswissmaps/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/gibonet/ggswissmaps/actions/workflows/R-CMD-check.yaml)  [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/ggswissmaps)](https://CRAN.R-project.org/package=ggswissmaps)
 
 
 See [ggswissmaps intro](https://gibonet.github.io/ggswissmaps/articles/ggswissmaps_intro.html) for an introduction.  
