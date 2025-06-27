@@ -54,7 +54,7 @@ ggplot(shp_sf[["g1k15"]]) +
 
 # Coordinate reference system (crs)
 
-Note that all the 'sf' data frames stored in the list `shp_sf` have the coordinate reference system (crs) corrensponding to "EPSG: 21781". This can be verified with `sf::st_crs()`:
+Note that all the 'sf' data frames stored in the list `shp_sf` have the coordinate reference system (crs) corresponding to "EPSG: 21781". This can be verified with `sf::st_crs()`:
 
 ```{r}
 library(sf)
